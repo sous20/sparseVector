@@ -45,17 +45,29 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
+  <main id="main" class="col-md-9">
+<div class="section level1">
 <div class="page-header"><h1 id="sparsevector">sparseVector<a class="anchor" aria-label="anchor" href="#sparsevector"></a>
 </h1></div>
-<p>Efficient sparse numeric vector implementation for R.</p>
+<p>This package provides an S4 class for representing sparse numeric vectors efficiently by storing only non-zero values and their positions. It includes methods for common vector operations including arithmetic, statistical functions, and transformations that maintain sparsity where possible.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>You can install the development version from GitHub:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"sous20/sparseVector"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"sous20/sparseVector"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Using GitHub PAT from the git credential store.</span></span>
+<span><span class="co">#&gt; Downloading GitHub repo sous20/sparseVector@HEAD</span></span>
+<span><span class="co">#&gt; ── R CMD build ─────────────────────────────────────────────────────────────────</span></span>
+<span><span class="co">#&gt; * checking for file ‘/private/var/folders/vk/52v3w4hn36974vvx4x4q66m00000gn/T/RtmpUd4ES0/remotes71503b762ae0/sous20-sparseVector-a48fdaf/DESCRIPTION’ ... OK</span></span>
+<span><span class="co">#&gt; * preparing ‘sparseVector’:</span></span>
+<span><span class="co">#&gt; * checking DESCRIPTION meta-information ... OK</span></span>
+<span><span class="co">#&gt; * checking for LF line-endings in source and make files and shell scripts</span></span>
+<span><span class="co">#&gt; * checking for empty or unneeded directories</span></span>
+<span><span class="co">#&gt; * building ‘sparseVector_0.1.0.tar.gz’</span></span>
+<span><span class="co">#&gt; Installing package into '/private/var/folders/vk/52v3w4hn36974vvx4x4q66m00000gn/T/Rtmpdi9Tts/temp_libpath608b53fe908e'</span></span>
+<span><span class="co">#&gt; (as 'lib' is unspecified)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
@@ -68,11 +80,9 @@
 <span><span class="co">#&gt; The following object is masked from 'package:base':</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;     norm</span></span>
-<span></span>
 <span><span class="co"># Create a sparse vector</span></span>
 <span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">as</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">4</span>, <span class="fl">0</span><span class="op">)</span>, <span class="st">"sparse_numeric"</span><span class="op">)</span></span>
 <span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fu">as</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2</span>, <span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span>, <span class="st">"sparse_numeric"</span><span class="op">)</span></span>
-<span></span>
 <span><span class="co"># Perform operations</span></span>
 <span><span class="fu"><a href="reference/sparse_add.html">sparse_add</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Sparse numeric vector of length 5 </span></span>
@@ -84,9 +94,9 @@
 <span><span class="co">#&gt; [1] 1</span></span>
 <span><span class="fu"><a href="reference/norm.html">norm</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 4.123106</span></span></code></pre></div>
-<!-- badges: end -->
 </div>
 </div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -118,7 +128,12 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/yourusername/sparseVector/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/yourusername/sparseVector/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
