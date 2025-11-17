@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 # sparseVector
 
-Efficient sparse numeric vector implementation for R.
+This package provides an S4 class for representing sparse numeric vectors efficiently by storing only non-zero values and their positions. It includes methods for common vector operations including arithmetic, statistical functions, and transformations that maintain sparsity where possible.
 
 ## Installation
 
