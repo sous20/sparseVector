@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+
+# sparseVector
+
+Efficient sparse numeric vector implementation for R.
+
+## Installation
+
+You can install the development version from GitHub:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("sous20/sparseVector")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(sparseVector)
+
+# Create a sparse vector
+x <- as(c(1, 0, 0, 4, 0), "sparse_numeric")
+y <- as(c(0, 2, 0, 1, 0), "sparse_numeric")
+
+# Perform operations
+sparse_add(x, y)
+mean(x)
+norm(x)
+```
+
+<!-- badges: end -->
