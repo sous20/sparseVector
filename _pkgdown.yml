@@ -2,3 +2,45 @@ url: https://sous20.github.io/sparseVector/
 template:
   bootstrap: 5
 
+navbar:
+  title: "sparseVector"
+  structure:
+    left:  [home, intro, reference, articles]
+    right: [github]
+  components:
+    intro:
+      text: "Getting Started"
+      href: articles/getting_started.html
+
+home:
+  title: Efficient Sparse Numeric Vector Implementation
+  description: >
+    An R package providing an S4 class for representing sparse numeric vectors
+    efficiently. Store only non-zero values and their positions, saving memory
+    and computation time. Includes methods for arithmetic operations, statistical
+    functions, and transformations.
+
+reference:
+  - title: "Class"
+    contents:
+      - sparse_numeric-class
+  - title: "Arithmetic Operations"
+    contents:
+      - sparse_add
+      - sparse_mult
+      - sparse_sub
+      - sparse_crossprod
+  - title: "Statistical Functions"
+    contents:
+      - norm
+      - standardize
+      - "mean,sparse_numeric-method"
+  - title: "Coercion"
+    contents:
+      - coerce-numeric-sparse_numeric
+      - coerce-sparse_numeric-numeric
+  - title: "Utilities"
+    contents:
+      - "length,sparse_numeric-method"
+      - "plot,sparse_numeric,sparse_numeric-method"
+      - "show,sparse_numeric-method"

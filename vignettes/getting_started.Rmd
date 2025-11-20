@@ -1,0 +1,93 @@
+---
+title: "Getting Started with sparseVector"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with sparseVector}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+devtools::load_all()
+```
+
+## What is sparseVector?
+
+The `sparseVector` package provides an efficient S4 class for representing sparse numeric vectors in R. A sparse vector is one that contains many zeros - instead of storing all elements, we only store the non-zero values and their positions. This saves memory and speeds up computations.
+
+## Basic Usage
+
+### Creating Sparse Vectors
+
+Convert a regular numeric vector to sparse format:
+```{r}
+library(sparseVector)
+
+# Create a sparse vector from a numeric vector
+x <- as(c(1, 0, 0, 4, 0, 2), "sparse_numeric")
+x
+```
+
+### Arithmetic Operations
+
+Perform element-wise operations:
+```{r}
+y <- as(c(0, 2, 0, 1, 0, 3), "sparse_numeric")
+
+# Addition
+sparse_add(x, y)
+
+# Multiplication
+sparse_mult(x, y)
+
+# Subtraction
+sparse_sub(x, y)
+
+# Cross product (dot product)
+sparse_crossprod(x, y)
+```
+
+### Using Operators
+
+You can also use standard R operators:
+```{r}
+# Addition with +
+x + y
+
+# Multiplication with *
+x * y
+
+# Subtraction with -
+x - y
+```
+
+### Statistical Functions
+
+Compute statistics efficiently:
+```{r}
+# Mean (including zeros)
+mean(x)
+
+# L2 Norm
+norm(x)
+
+# Standardize
+x_std <- standardize(x)
+mean(x_std)
+```
+
+### Converting Back to Dense Format
+```{r}
+# Convert sparse to regular numeric vector
+as(x, "numeric")
+```
+
+## Why Use Sparse Vectors?
+
+- **Memory Efficient**: Store only non-zero values
+- **Computation Efficient**: Operations only compute on non-zero elements
+- **Easy to Use**: Familiar R interface with + , *, - operators
+- **Type Safe**: S4 class with validation
