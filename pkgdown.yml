@@ -1,8 +1,9 @@
 pandoc: 3.1.11
 pkgdown: 2.2.0
 pkgdown_sha: ~
-articles: {}
-last_built: 2025-11-17T22:19Z
+articles:
+  getting_started: getting_started.html
+last_built: 2025-11-20T20:41Z
 urls:
   reference: https://sous20.github.io/sparseVector/reference
   article: https://sous20.github.io/sparseVector/articles

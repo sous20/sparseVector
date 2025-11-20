@@ -15,10 +15,13 @@
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
-      </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
- <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json"></form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/sous20/sparseVector/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../articles/getting_started.html">Getting Started</a></li>
+<li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/getting_started.html">Getting Started with sparseVector</a></li>
+  </ul></li>
+      </ul><ul class="navbar-nav"><li class="nav-item"><a class="external-link nav-link" href="https://github.com/sous20/sparseVector/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul></div>
 
 
@@ -31,7 +34,90 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="class">Class<a class="anchor" aria-label="anchor" href="#class"></a></h2>
+
+
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="sparse_numeric-class.html">sparse_numeric-class</a></code>
+
+        </dt>
+        <dd>Sparse Numeric Vector Class</dd>
+      </dl></div><div class="section level2">
+      <h2 id="arithmetic-operations">Arithmetic Operations<a class="anchor" aria-label="anchor" href="#arithmetic-operations"></a></h2>
+
+
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="sparse_add.html">sparse_add()</a></code> <code><a href="sparse_add.html">`+`(<i>&lt;sparse_numeric&gt;</i>,<i>&lt;sparse_numeric&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Add Two Sparse Numeric Vectors</dd>
+
+        <dt>
+
+          <code><a href="sparse_mult.html">sparse_mult()</a></code> <code><a href="sparse_mult.html">`*`(<i>&lt;sparse_numeric&gt;</i>,<i>&lt;sparse_numeric&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Multiply Two Sparse Numeric Vectors</dd>
+
+        <dt>
+
+          <code><a href="sparse_sub.html">sparse_sub()</a></code> <code><a href="sparse_sub.html">`-`(<i>&lt;sparse_numeric&gt;</i>,<i>&lt;sparse_numeric&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Subtract Two Sparse Numeric Vectors</dd>
+
+        <dt>
+
+          <code><a href="sparse_crossprod.html">sparse_crossprod()</a></code>
+
+        </dt>
+        <dd>Compute Cross Product of Two Sparse Numeric Vectors</dd>
+      </dl></div><div class="section level2">
+      <h2 id="statistical-functions">Statistical Functions<a class="anchor" aria-label="anchor" href="#statistical-functions"></a></h2>
+
+
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="norm.html">norm()</a></code>
+
+        </dt>
+        <dd>Compute the Norm of a Sparse Numeric Vector</dd>
+
+        <dt>
+
+          <code><a href="standardize.html">standardize()</a></code>
+
+        </dt>
+        <dd>Standardize a Sparse Numeric Vector</dd>
+
+        <dt>
+
+          <code><a href="mean-sparse_numeric-method.html">mean(<i>&lt;sparse_numeric&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Calculate Mean of Sparse Numeric Vector</dd>
+      </dl></div><div class="section level2">
+      <h2 id="coercion">Coercion<a class="anchor" aria-label="anchor" href="#coercion"></a></h2>
 
 
 
@@ -53,27 +139,22 @@
 
         </dt>
         <dd>Coerce Sparse Numeric to Numeric Vector</dd>
+      </dl></div><div class="section level2">
+      <h2 id="utilities">Utilities<a class="anchor" aria-label="anchor" href="#utilities"></a></h2>
 
-        <dt>
+
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
 
           <code><a href="length-sparse_numeric-method.html">length(<i>&lt;sparse_numeric&gt;</i>)</a></code>
 
         </dt>
         <dd>Get Length of Sparse Numeric Vector</dd>
-
-        <dt>
-
-          <code><a href="mean-sparse_numeric-method.html">mean(<i>&lt;sparse_numeric&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Calculate Mean of Sparse Numeric Vector</dd>
-
-        <dt>
-
-          <code><a href="norm.html">norm()</a></code>
-
-        </dt>
-        <dd>Compute the Norm of a Sparse Numeric Vector</dd>
 
         <dt>
 
@@ -88,50 +169,9 @@
 
         </dt>
         <dd>Show Method for Sparse Numeric Vectors</dd>
-
-        <dt>
-
-          <code><a href="sparse_add.html">sparse_add()</a></code> <code><a href="sparse_add.html">`+`(<i>&lt;sparse_numeric&gt;</i>,<i>&lt;sparse_numeric&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Add Two Sparse Numeric Vectors</dd>
-
-        <dt>
-
-          <code><a href="sparse_crossprod.html">sparse_crossprod()</a></code>
-
-        </dt>
-        <dd>Compute Cross Product of Two Sparse Numeric Vectors</dd>
-
-        <dt>
-
-          <code><a href="sparse_mult.html">sparse_mult()</a></code> <code><a href="sparse_mult.html">`*`(<i>&lt;sparse_numeric&gt;</i>,<i>&lt;sparse_numeric&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Multiply Two Sparse Numeric Vectors</dd>
-
-        <dt>
-
-          <code><a href="sparse_numeric-class.html">sparse_numeric-class</a></code>
-
-        </dt>
-        <dd>Sparse Numeric Vector Class</dd>
-
-        <dt>
-
-          <code><a href="sparse_sub.html">sparse_sub()</a></code> <code><a href="sparse_sub.html">`-`(<i>&lt;sparse_numeric&gt;</i>,<i>&lt;sparse_numeric&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Subtract Two Sparse Numeric Vectors</dd>
-
-        <dt>
-
-          <code><a href="standardize.html">standardize()</a></code>
-
-        </dt>
-        <dd>Standardize a Sparse Numeric Vector</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
