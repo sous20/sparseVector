@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   getting_started: getting_started.html
-last_built: 2025-11-20T21:02Z
+last_built: 2025-11-20T21:08Z
 urls:
   reference: https://sous20.github.io/sparseVector/reference
   article: https://sous20.github.io/sparseVector/articles
